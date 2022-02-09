@@ -442,7 +442,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
+							"raw": "{\r\n    \"idProduct\":\"6202fae7a6bcce1b28a7e062\",\r\n    \"debt\":\"3600\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -672,6 +672,40 @@
 							"path": [
 								"history",
 								"61fdb8c597b2fe630a37de6b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/transaction?idProduct&amount=300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"transaction"
+							],
+							"query": [
+								{
+									"key": "idProduct",
+									"value": null
+								},
+								{
+									"key": "amount",
+									"value": "300"
+								}
 							]
 						}
 					},

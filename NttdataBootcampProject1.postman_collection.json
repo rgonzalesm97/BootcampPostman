@@ -14,12 +14,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/client",
+							"raw": "http://localhost:8090/client",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8090",
 							"path": [
 								"client"
 							]
@@ -33,15 +33,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/client/61fdb7d497b2fe630a37de69",
+							"raw": "http://localhost:8090/client/6207044ca310e82823987235",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8090",
 							"path": [
 								"client",
-								"61fdb7d497b2fe630a37de69"
+								"6207044ca310e82823987235"
 							]
 						}
 					},
@@ -54,7 +54,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
+							"raw": "{\r\n    \"name\":\"Empresas XYZ\",\r\n    \"type\":\"bussines\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -62,12 +62,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/client",
+							"raw": "http://localhost:8090/client",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8090",
 							"path": [
 								"client"
 							]
@@ -82,7 +82,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"61fdb7d497b2fe630a37de69\",\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
+							"raw": "{\r\n    \"id\": \"620a8b490af7917c67ec6026\",\r\n    \"name\": \"Empresas XYZ\",\r\n    \"type\": \"business\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -90,12 +90,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/client",
+							"raw": "http://localhost:8090/client",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8090",
 							"path": [
 								"client"
 							]
@@ -118,15 +118,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/client/61fdb8c597b2fe630a37de6b",
+							"raw": "http://localhost:8090/client/620a8b9e0af7917c67ec6027",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8090",
 							"path": [
 								"client",
-								"61fdb8c597b2fe630a37de6b"
+								"620a8b9e0af7917c67ec6027"
 							]
 						}
 					},
@@ -135,152 +135,22 @@
 			]
 		},
 		{
-			"name": "Product",
+			"name": "Credit",
 			"item": [
-				{
-					"name": "ProductCatalog",
-					"item": [
-						{
-							"name": "getAll",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8081/productCatalog",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8081",
-									"path": [
-										"productCatalog"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "getOne",
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8081/productCatalog/6202c159996ba7549ae5f171",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8081",
-									"path": [
-										"productCatalog",
-										"6202c159996ba7549ae5f171"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "save",
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"type\":\"Tarjeta de Credito Empresarial\",\r\n    \"maintenance\":30,\r\n    \"monthlyMovements\":-1,\r\n    \"limitPerClientPersonal\":0,\r\n    \"limitPerClientEmpresarial\":5\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8081/productCatalog",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8081",
-									"path": [
-										"productCatalog"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "update",
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": \"61fdb7d497b2fe630a37de69\",\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8081/productCatalog",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8081",
-									"path": [
-										"productCatalog"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "delete",
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"id\": \"61fdb7d497b2fe630a37de69\",\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "http://localhost:8081/productCatalog/61fdb7d497b2fe630a37de69",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8081",
-									"path": [
-										"productCatalog",
-										"61fdb7d497b2fe630a37de69"
-									]
-								}
-							},
-							"response": []
-						}
-					]
-				},
 				{
 					"name": "getAll",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/product/test",
+							"raw": "http://localhost:8090/credit",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8081",
+							"port": "8090",
 							"path": [
-								"product",
-								"test"
+								"credit"
 							]
 						}
 					},
@@ -292,15 +162,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/product/6201878629bb8a7e64b09055",
+							"raw": "http://localhost:8090/credit/620aed5eb6b9957f1c7c7b53",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8081",
+							"port": "8090",
 							"path": [
-								"product",
-								"6201878629bb8a7e64b09055"
+								"credit",
+								"620aed5eb6b9957f1c7c7b53"
 							]
 						}
 					},
@@ -313,7 +183,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"type\":\"Targeta de Credito\",\r\n    \"idClient\":\"someid2342oh\",\r\n    \"holders\":[],\r\n    \"authorizedSigners\":[],\r\n    \"amount\":54000\r\n}",
+							"raw": "{\r\n    \"idClient\":\"sssssssss\",\r\n    \"nameProduct\":\"tarjeta de credito personal\",\r\n    \"cardNumber\":\"796156886754\",\r\n    \"typeCredit\":\"personal\",\r\n    \"accountNumber\":\"1186668354\",\r\n    \"balance\":12388.00,\r\n    \"credit\":18000,\r\n    \"debt\":500\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -321,14 +191,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/product",
+							"raw": "http://localhost:8090/credit",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8081",
+							"port": "8090",
 							"path": [
-								"product"
+								"credit"
 							]
 						}
 					},
@@ -341,7 +211,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"61fdb7d497b2fe630a37de69\",\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
+							"raw": "{\r\n    \"id\": \"620a8994d725744a30861736\",\r\n    \"idClient\": \"620a8b490af7917c67ec6026\",\r\n    \"cardNumber\": \"7648138543543\",\r\n    \"typeCredit\": \"credito empresarial\",\r\n    \"accountNumber\": \"5773138485\",\r\n    \"balance\": 20561.45,\r\n    \"credit\": 25000.0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -349,14 +219,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/client",
+							"raw": "http://localhost:8090/credit",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8081",
+							"port": "8090",
 							"path": [
-								"client"
+								"credit"
 							]
 						}
 					},
@@ -377,15 +247,144 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/product/6201875129bb8a7e64b09054",
+							"raw": "http://localhost:8090/credit/620a8c94a947f3491177a7e7",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8081",
+							"port": "8090",
 							"path": [
-								"product",
-								"6201875129bb8a7e64b09054"
+								"credit",
+								"620a8c94a947f3491177a7e7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/account/620a8d8677204633c19ae138",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"account",
+								"620a8d8677204633c19ae138"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idClient\":\"6207044ca310e82823987235\",\r\n    \"cardNumber\":\"78468468453153\",\r\n    \"typeAccount\":\"pldddddddddddjo\",\r\n    \"accountNumber\":\"96813874354\",\r\n    \"balance\":30500,\r\n    \"maintenance\":0,\r\n    \"monthlyMovements\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"620a8dd577204633c19ae13a\",\r\n    \"idClient\": \"6207044ca310e82823987235\",\r\n    \"cardNumber\": \"78468468453153\",\r\n    \"typeAccount\": \"pldddsssssssssssssssddjo\",\r\n    \"accountNumber\": \"96813874354\",\r\n    \"balance\": 30500.0,\r\n    \"maintenance\": 0.0,\r\n    \"monthlyMovements\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"61fdb7d497b2fe630a37de69\",\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/account/620a8dd577204633c19ae13a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"account",
+								"620a8dd577204633c19ae13a"
 							]
 						}
 					},
@@ -559,12 +558,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8084/history",
+							"raw": "http://localhost:8090/history",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8090",
 							"path": [
 								"history"
 							]
@@ -578,12 +577,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8084/history/61fdb7d497b2fe630a37de69",
+							"raw": "http://localhost:8090/history/61fdb7d497b2fe630a37de69",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8090",
 							"path": [
 								"history",
 								"61fdb7d497b2fe630a37de69"
@@ -599,7 +598,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\":\"Jaimito\",\r\n    \"apellidos\":\"Rivera Maya\",\r\n    \"razonSocial\":null,\r\n    \"tipo\":\"Empresarial\",\r\n    \"productos\":{\r\n        \"cuentaAhorros\":1,\r\n        \"cuentaCorriente\":0,\r\n        \"cuentaPlazoFijo\":0,\r\n        \"creditoPersonal\":0,\r\n        \"creditoEmpresarial\":0,\r\n        \"tarjetaCredito\":0\r\n    }\r\n}",
+							"raw": "{\r\n    \"idProduct\":\"564648543\",\r\n    \"type\":\"consumo de credito\",\r\n    \"amount\":\"460\",\r\n    \"date\":\"2020-05-12\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -607,12 +606,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8084/history",
+							"raw": "http://localhost:8090/history",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8090",
 							"path": [
 								"history"
 							]
@@ -635,12 +634,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8084/history",
+							"raw": "http://localhost:8090/history",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8090",
 							"path": [
 								"history"
 							]
@@ -663,12 +662,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8084/history/61fdb8c597b2fe630a37de6b",
+							"raw": "http://localhost:8090/history/61fdb8c597b2fe630a37de6b",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8090",
 							"path": [
 								"history",
 								"61fdb8c597b2fe630a37de6b"
@@ -680,31 +679,128 @@
 			]
 		},
 		{
-			"name": "Transaction",
+			"name": "PassiveTransaction",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "deposit",
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
 						"url": {
-							"raw": "http://localhost:8084/transaction?idProduct&amount=300",
+							"raw": "http://localhost:8090/passive-transaction/deposit/620a8d8677204633c19ae138?amount=800",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8084",
+							"port": "8090",
 							"path": [
-								"transaction"
+								"passive-transaction",
+								"deposit",
+								"620a8d8677204633c19ae138"
 							],
 							"query": [
 								{
-									"key": "idProduct",
-									"value": null
-								},
+									"key": "amount",
+									"value": "800"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "withdraw",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8090/passive-transaction/withdraw/620a8d8677204633c19ae138?amount=1500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"passive-transaction",
+								"withdraw",
+								"620a8d8677204633c19ae138"
+							],
+							"query": [
 								{
 									"key": "amount",
-									"value": "300"
+									"value": "1500"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ActiveWithdraw",
+			"item": [
+				{
+					"name": "Consume",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/active-withdraw/consume/620aed5eb6b9957f1c7c7b53?amount=338",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"active-withdraw",
+								"consume",
+								"620aed5eb6b9957f1c7c7b53"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "338"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ActivePayment",
+			"item": [
+				{
+					"name": "Pay",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/active-payment/pay/620aed5eb6b9957f1c7c7b53?amount=500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"active-payment",
+								"pay",
+								"620aed5eb6b9957f1c7c7b53"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "500"
 								}
 							]
 						}

@@ -742,6 +742,34 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "transferTo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/passive-transaction/transfer/620ac16977204633c19ae13d/620ac08a77204633c19ae13c?amount=500",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"passive-transaction",
+								"transfer",
+								"620ac16977204633c19ae13d",
+								"620ac08a77204633c19ae13c"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},

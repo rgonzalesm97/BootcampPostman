@@ -951,7 +951,7 @@
 			]
 		},
 		{
-			"name": "DebitCard Copy",
+			"name": "Yanki",
 			"item": [
 				{
 					"name": "getAll",
@@ -978,7 +978,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/yanki/2",
+							"raw": "http://localhost:8090/yanki/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -986,7 +986,7 @@
 							"port": "8090",
 							"path": [
 								"yanki",
-								"2"
+								""
 							]
 						}
 					},
@@ -999,7 +999,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"documentNumber\":\"4568245\",\r\n    \"phoneNumber\":\"948289464\",\r\n    \"phoneIMEI\":\"2893742893\",\r\n    \"email\":\"yabki@email.com\"\r\n}",
+							"raw": "{\r\n    \"documentNumber\":\"6846184\",\r\n    \"phoneNumber\":\"93481216\",\r\n    \"phoneIMEI\":\"351681661516\",\r\n    \"email\":\"yanki2@email.com\",\r\n    \"cardNumber\":null,\r\n    \"balance\":200.0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1007,7 +1007,35 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8090/yanki/2",
+							"raw": "http://localhost:8090/yanki",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"yanki"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendTo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"6220f7ab8332f83447f05353\",\r\n    \"documentNumber\": \"4568245\",\r\n    \"phoneNumber\": \"948289464\",\r\n    \"phoneIMEI\": \"2893742893\",\r\n    \"email\": \"yabki@email.com\",\r\n    \"cardNumber\": \"28375489203\",\r\n    \"balance\": 300.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/yanki/sendTo/93481216/500",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1015,7 +1043,9 @@
 							"port": "8090",
 							"path": [
 								"yanki",
-								"2"
+								"sendTo",
+								"93481216",
+								"500"
 							]
 						}
 					},
@@ -1036,14 +1066,198 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8090/yanki",
+							"raw": "http://localhost:8090/yanki/6220f5ec8fd4d93890ff1e9b",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8090",
 							"path": [
-								"yanki"
+								"yanki",
+								"6220f5ec8fd4d93890ff1e9b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bootcoin",
+			"item": [
+				{
+					"name": "getBootcoin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/coin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"coin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveBootcoin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"priceConversionBuy\":1.80,\r\n    \"priceConversionSell\": 1.70\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/coin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"coin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllWallets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/wallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWallet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/wallet/62212f50b3988258ccee0b4b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"wallet",
+								"62212f50b3988258ccee0b4b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documentNumber\":\"6846184\",\r\n    \"phoneNumber\":\"93481216\",\r\n    \"phoneIMEI\":\"351681661516\",\r\n    \"email\":\"yanki2@email.com\",\r\n    \"balance\":200.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/wallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"wallet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteWallet",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"priceConversionBuy\":1.80,\r\n    \"priceConversionSell\": 1.70\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/wallet/62212f84b3988258ccee0b4c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"wallet",
+								"62212f84b3988258ccee0b4c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buyRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\":\"buy request\",\r\n    \"phoneNumber\":\"933481216\",\r\n    \"amount\":1.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/bootcoin/wallet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"bootcoin",
+								"wallet"
 							]
 						}
 					},
